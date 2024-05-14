@@ -1,6 +1,6 @@
 ﻿@{
+    Layout = "_Layout";
     ViewData["Title"] = "Pizzeria";
-    Layout = null;
     List<Pizza> pizze = new List<Pizza>();
     pizze.Add(new Pizza("Margherita", "Pomodoro e Mozzarella", "https://tse2.mm.bing.net/th?id=OIP.ngyqhigAn1u1JdHglgT9qQHaF8&pid=Api&P=0&h=180", 5.00m));
     pizze.Add(new Pizza("Quattro Stagioni", "Pomodoro, Mozzarella, Funghi, Carciofi, Prosciutto Cotto", "https://tse4.mm.bing.net/th?id=OIP.-WRAk4xOUdcb9XgC3DnelgHaFG&pid=Api&P=0&h=180", 7.50m));
@@ -13,15 +13,7 @@
     pizze.Add(new Pizza("Vegetariana", "Pomodoro, Mozzarella, Verdure Grigliate", "https://tse1.mm.bing.net/th?id=OIP.cRd2t4oPlY8Ny30gKs6QyQHaE9&pid=Api&P=0&h=180", 7.50m));
 }
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewData["Title"]</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
-</head>
-<body>
+
     <div class="container-fluid bg">
         <h1 class="text-center p-5">La mia pizzeria</h1>
         <div class="container">
@@ -47,39 +39,3 @@
    
 
 
-<style>
-
-    h1{
-        font-family: "Bebas Neue", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-    }
-
-    .bg{
-        background: rgb(238,174,202);
-        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-    }
-
-    .card {
-        height: 355px;
-        transition: transform 0.3s ease-out;
-        border-radius: 50px;
-        overflow: auto;
-    }
-
-    .card:hover {
-        transform: scale(1.1);
-    }
-
-    img {
-        width: 100%;
-        height: 150px;
-    }
-</style>
-
-</body>
-</html>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
